@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="editor-toolbar">
+<button onclick="execXmd('bold')"> <b>B</b></button>
+<button onclick="execXmd('italic')"> <b>I</b></button>
+<button onclick="execXmd('underline')"> <b>U</b></button>
+
+</select>
+<select onchange="execCmdWithArg ('fontSize', this.value)">
+<option value="1">extrasmall</option>
+<option value="1">small</option>
+<option value="3">normal</option>
+<option value="5">large</option>
+<option value="7">huge</option>
+</select>
+
+<select onchange="execCmdWithArg ('fontname', this.value)">
+    <option value="fontName">fontname</option>
+    <option value="Arial">arial</option>
+    <option value="Courier">courier</option>
+    <option value="Georgi">georgia</option>
+    <option value="Danfo">Danfo</option>
+    <option value="Verdana">Verdana</option>
+    
+    </select>
+    <input type="color" name="color" id=""onchange="execCmdWithArt ('fontname', this.value)">  
+  </div>
+
+    
+<div class="input">
+
+  <div id="editor" contenteditable="true" class="editor-content"></div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
